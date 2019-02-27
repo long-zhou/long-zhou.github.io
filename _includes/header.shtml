@@ -8,7 +8,7 @@
 
     <title>{{page.title}}</title>
 
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Hao Zhou's Blog" href="rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Long Zhou's Blog" href="rss.xml" />
     <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Google Analytics -->
@@ -57,12 +57,18 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
           </button>
-          <span class="navbar-brand">Hao Zhou</span>
+          <span class="navbar-brand">Long Zhou</span>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li {% if page.section == 'home'%} class="active" {% endif %} >
               <a href="index.html">Home</a>
+            </li>
+            <li {% if page.section == 'publications'%} class="active" {% endif %} >
+              <a href="publications.html">Publications</a>
+            </li>
+            <li {% if page.section == 'blog'%} class="active" {% endif %} >
+              <a href="blog.html">Blog</a>
             </li>
           </ul>
         </div>
